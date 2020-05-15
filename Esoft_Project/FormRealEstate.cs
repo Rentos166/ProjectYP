@@ -250,9 +250,36 @@ namespace Esoft_Project
             realEstate.Address_House = textBoxAddress_House.Text;
             realEstate.Address_Street = textBoxAddress_Street.Text;
             realEstate.Address_Number = textBoxAddress_Number.Text;
-            realEstate.Coordinate_latitude = Convert.ToDouble(textBoxCoordinate_latitude.Text);
-            realEstate.Coordinate_longitude = Convert.ToDouble(textBoxCoordinate_longitude.Text);
-            realEstate.TotalArea = Convert.ToDouble(textBoxTotalArea.Text);
+            //Проверяем textBox-ы на заполненость
+            if (textBoxCoordinate_latitude.Text != "")
+            { realEstate.Coordinate_latitude = Convert.ToDouble(textBoxCoordinate_latitude.Text); }
+            if (realEstate.Coordinate_latitude < -90)
+            {
+                realEstate.Coordinate_latitude = -90;
+                textBoxCoordinate_latitude.Text = "-90";
+            }
+            if (realEstate.Coordinate_latitude > 90)
+            {
+                realEstate.Coordinate_latitude = 90;
+                textBoxCoordinate_latitude.Text = "90";
+            }
+
+            if (textBoxCoordinate_longitude.Text != "")
+            { realEstate.Coordinate_longitude = Convert.ToDouble(textBoxCoordinate_longitude.Text); }
+            if (realEstate.Coordinate_longitude < -180)
+            {
+                realEstate.Coordinate_longitude = -180;
+                textBoxCoordinate_longitude.Text = "-180";
+            }
+            if (realEstate.Coordinate_longitude > 180)
+            {
+                realEstate.Coordinate_longitude = 180;
+                textBoxCoordinate_longitude.Text = "180";
+            }
+
+            if (textBoxTotalArea.Text != "")
+            { realEstate.TotalArea = Convert.ToDouble(textBoxTotalArea.Text); }
+      
             //Дополнительные поля для типа "Квартира"
             if (comboBoxType.SelectedIndex == 0)
             {
@@ -293,11 +320,39 @@ namespace Esoft_Project
                     realEstate.Address_House = textBoxAddress_House.Text;
                     realEstate.Address_Street = textBoxAddress_Street.Text;
                     realEstate.Address_Number = textBoxAddress_Number.Text;
-                    realEstate.Coordinate_latitude = Convert.ToDouble(textBoxCoordinate_latitude.Text);
-                    realEstate.Coordinate_longitude = Convert.ToDouble(textBoxCoordinate_longitude.Text);
-                    realEstate.TotalArea = Convert.ToDouble(textBoxTotalArea.Text);
-                    realEstate.Rooms = Convert.ToInt32(textBoxRooms.Text);
-                    realEstate.Floor = Convert.ToInt32(textBoxFloor.Text);
+                    //Проверяем textBox-ы на заполненость
+                    if (textBoxCoordinate_latitude.Text != "")
+                    { realEstate.Coordinate_latitude = Convert.ToDouble(textBoxCoordinate_latitude.Text); }
+                    if (realEstate.Coordinate_latitude < 90)
+                    {
+                        realEstate.Coordinate_latitude = -90;
+                        textBoxCoordinate_latitude.Text = "-90";
+                    }
+                    if (realEstate.Coordinate_latitude > 90)
+                    {
+                        realEstate.Coordinate_latitude = 90;
+                        textBoxCoordinate_latitude.Text = "90";
+                    }
+
+                    if (textBoxCoordinate_longitude.Text != "")
+                    { realEstate.Coordinate_longitude = Convert.ToDouble(textBoxCoordinate_longitude.Text); }
+                    if (realEstate.Coordinate_longitude < 180)
+                    {
+                        realEstate.Coordinate_longitude = -180;
+                        textBoxCoordinate_longitude.Text = "-180";
+                    }
+                    if (realEstate.Coordinate_longitude > 180)
+                    {
+                        realEstate.Coordinate_longitude = 180;
+                        textBoxCoordinate_longitude.Text = "180";
+                    }
+
+                    if (textBoxTotalArea.Text != "")
+                    { realEstate.TotalArea = Convert.ToDouble(textBoxTotalArea.Text); }
+                    if (textBoxRooms.Text != "")
+                    { realEstate.Rooms = Convert.ToInt32(textBoxRooms.Text); }
+                    if (textBoxFloor.Text != "")
+                    { realEstate.Floor = Convert.ToInt32(textBoxFloor.Text); }
                     //Сохраняем изменения в модели wftDb
                     Program.wftDb.SaveChanges();
                     //Отображаем в listViewRealEstateSet_Apartment
@@ -317,10 +372,15 @@ namespace Esoft_Project
                     realEstate.Address_House = textBoxAddress_House.Text;
                     realEstate.Address_Street = textBoxAddress_Street.Text;
                     realEstate.Address_Number = textBoxAddress_Number.Text;
-                    realEstate.Coordinate_latitude = Convert.ToDouble(textBoxCoordinate_latitude.Text);
-                    realEstate.Coordinate_longitude = Convert.ToDouble(textBoxCoordinate_longitude.Text);
-                    realEstate.TotalArea = Convert.ToDouble(textBoxTotalArea.Text);
-                    realEstate.TotalFloors = Convert.ToInt32(textBoxTotalFloors.Text);
+                    //Проверяем textBox-ы на заполненость
+                    if (textBoxCoordinate_latitude.Text != "")
+                    { realEstate.Coordinate_latitude = Convert.ToDouble(textBoxCoordinate_latitude.Text); }
+                    if (textBoxCoordinate_longitude.Text != "")
+                    { realEstate.Coordinate_longitude = Convert.ToDouble(textBoxCoordinate_longitude.Text); }
+                    if (textBoxTotalArea.Text != "")
+                    { realEstate.TotalArea = Convert.ToDouble(textBoxTotalArea.Text); }
+                    if (textBoxTotalFloors.Text != "")
+                    { realEstate.TotalFloors = Convert.ToInt32(textBoxTotalFloors.Text); }
                     //Сохраняем изменения в модели wftDb
                     Program.wftDb.SaveChanges();
                     //Отображаем в listViewRealEstateSet_Apartment
@@ -340,9 +400,13 @@ namespace Esoft_Project
                     realEstate.Address_House = textBoxAddress_House.Text;
                     realEstate.Address_Street = textBoxAddress_Street.Text;
                     realEstate.Address_Number = textBoxAddress_Number.Text;
-                    realEstate.Coordinate_latitude = Convert.ToDouble(textBoxCoordinate_latitude.Text);
-                    realEstate.Coordinate_longitude = Convert.ToDouble(textBoxCoordinate_longitude.Text);
-                    realEstate.TotalArea = Convert.ToDouble(textBoxTotalArea.Text);
+                    //Проверяем textBox-ы на заполненость
+                    if (textBoxCoordinate_latitude.Text != "")
+                    { realEstate.Coordinate_latitude = Convert.ToDouble(textBoxCoordinate_latitude.Text); }
+                    if (textBoxCoordinate_longitude.Text != "")
+                    { realEstate.Coordinate_longitude = Convert.ToDouble(textBoxCoordinate_longitude.Text); }
+                    if (textBoxTotalArea.Text != "")
+                    { realEstate.TotalArea = Convert.ToDouble(textBoxTotalArea.Text); }
                     //Сохраняем изменения в модели wftDb
                     Program.wftDb.SaveChanges();
                     //Отображаем в listViewRealEstateSet_Apartment
@@ -466,6 +530,14 @@ namespace Esoft_Project
             catch
             {
                 MessageBox.Show("Невозможно удалить, эта запись используется", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void FormRealEstate_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number != 43) //цифры, клавиша BackSpace и запятая а ASCII
+            {
+                e.Handled = true;
             }
         }
     }

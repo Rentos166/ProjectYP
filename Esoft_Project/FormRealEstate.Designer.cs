@@ -44,6 +44,15 @@
             this.labelFloor = new System.Windows.Forms.Label();
             this.labelTotalFloors = new System.Windows.Forms.Label();
             this.listViewRealEstateSet_Apartment = new System.Windows.Forms.ListView();
+            this.Город = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Улица = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Номер_дома = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Номер_квартиры = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Широта = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Долгота = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Площадь = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Количество_комнат = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Этаж = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBoxAddress_City = new System.Windows.Forms.TextBox();
             this.textBoxAddress_Street = new System.Windows.Forms.TextBox();
             this.textBoxAddress_House = new System.Windows.Forms.TextBox();
@@ -55,23 +64,6 @@
             this.textBoxFloor = new System.Windows.Forms.TextBox();
             this.textBoxTotalFloors = new System.Windows.Forms.TextBox();
             this.listViewRealEstateSet_House = new System.Windows.Forms.ListView();
-            this.listViewRealEstateSet_Land = new System.Windows.Forms.ListView();
-            this.Город = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Улица = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Номер_дома = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Номер_квартиры = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Широта = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Долгота = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Площадь = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Количество_комнат = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Этаж = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Город1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Улица1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Номер_дома1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Номер_квартиры1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Широта1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Долгота1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Площадь1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Город2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Улица2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Номер_дома2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -80,6 +72,14 @@
             this.Долгота2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Площадь2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Количество_этажей1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listViewRealEstateSet_Land = new System.Windows.Forms.ListView();
+            this.Город1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Улица1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Номер_дома1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Номер_квартиры1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Широта1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Долгота1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Площадь1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -89,7 +89,7 @@
             this.buttonAdd.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonAdd.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonAdd.Location = new System.Drawing.Point(346, 362);
+            this.buttonAdd.Location = new System.Drawing.Point(351, 362);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(102, 32);
             this.buttonAdd.TabIndex = 0;
@@ -102,7 +102,7 @@
             this.buttonEdit.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonEdit.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEdit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonEdit.Location = new System.Drawing.Point(454, 362);
+            this.buttonEdit.Location = new System.Drawing.Point(459, 362);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(102, 32);
             this.buttonEdit.TabIndex = 1;
@@ -115,7 +115,7 @@
             this.buttonDel.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonDel.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonDel.Location = new System.Drawing.Point(562, 362);
+            this.buttonDel.Location = new System.Drawing.Point(567, 362);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(102, 32);
             this.buttonDel.TabIndex = 2;
@@ -272,6 +272,45 @@
             this.listViewRealEstateSet_Apartment.View = System.Windows.Forms.View.Details;
             this.listViewRealEstateSet_Apartment.SelectedIndexChanged += new System.EventHandler(this.listViewRealEstateSet_Apartment_SelectedIndexChanged);
             // 
+            // Город
+            // 
+            this.Город.Text = "Город";
+            // 
+            // Улица
+            // 
+            this.Улица.Text = "Улица";
+            // 
+            // Номер_дома
+            // 
+            this.Номер_дома.Text = "Номер дома";
+            this.Номер_дома.Width = 80;
+            // 
+            // Номер_квартиры
+            // 
+            this.Номер_квартиры.Text = "Номер квартиры";
+            this.Номер_квартиры.Width = 103;
+            // 
+            // Широта
+            // 
+            this.Широта.Text = "Широта";
+            // 
+            // Долгота
+            // 
+            this.Долгота.Text = "Долгота";
+            // 
+            // Площадь
+            // 
+            this.Площадь.Text = "Площадь";
+            // 
+            // Количество_комнат
+            // 
+            this.Количество_комнат.Text = "Количество комнат";
+            this.Количество_комнат.Width = 113;
+            // 
+            // Этаж
+            // 
+            this.Этаж.Text = "Этаж";
+            // 
             // textBoxAddress_City
             // 
             this.textBoxAddress_City.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -362,12 +401,51 @@
             this.listViewRealEstateSet_House.Location = new System.Drawing.Point(4, 182);
             this.listViewRealEstateSet_House.MultiSelect = false;
             this.listViewRealEstateSet_House.Name = "listViewRealEstateSet_House";
-            this.listViewRealEstateSet_House.Size = new System.Drawing.Size(660, 174);
+            this.listViewRealEstateSet_House.Size = new System.Drawing.Size(665, 174);
             this.listViewRealEstateSet_House.TabIndex = 26;
             this.listViewRealEstateSet_House.UseCompatibleStateImageBehavior = false;
             this.listViewRealEstateSet_House.View = System.Windows.Forms.View.Details;
             this.listViewRealEstateSet_House.Visible = false;
             this.listViewRealEstateSet_House.SelectedIndexChanged += new System.EventHandler(this.listViewRealEstateSet_House_SelectedIndexChanged);
+            // 
+            // Город2
+            // 
+            this.Город2.Text = "Город";
+            this.Город2.Width = 73;
+            // 
+            // Улица2
+            // 
+            this.Улица2.Text = "Улица";
+            // 
+            // Номер_дома2
+            // 
+            this.Номер_дома2.Text = "Номер дома";
+            this.Номер_дома2.Width = 80;
+            // 
+            // Номер_квартиры2
+            // 
+            this.Номер_квартиры2.Text = "Номер квартиры";
+            this.Номер_квартиры2.Width = 106;
+            // 
+            // Широта2
+            // 
+            this.Широта2.Text = "Широта";
+            this.Широта2.Width = 71;
+            // 
+            // Долгота2
+            // 
+            this.Долгота2.Text = "Долгота";
+            this.Долгота2.Width = 74;
+            // 
+            // Площадь2
+            // 
+            this.Площадь2.Text = "Площадь";
+            this.Площадь2.Width = 86;
+            // 
+            // Количество_этажей1
+            // 
+            this.Количество_этажей1.Text = "Количество этажей";
+            this.Количество_этажей1.Width = 111;
             // 
             // listViewRealEstateSet_Land
             // 
@@ -382,7 +460,7 @@
             this.listViewRealEstateSet_Land.FullRowSelect = true;
             this.listViewRealEstateSet_Land.GridLines = true;
             this.listViewRealEstateSet_Land.HideSelection = false;
-            this.listViewRealEstateSet_Land.Location = new System.Drawing.Point(-1, 182);
+            this.listViewRealEstateSet_Land.Location = new System.Drawing.Point(4, 182);
             this.listViewRealEstateSet_Land.MultiSelect = false;
             this.listViewRealEstateSet_Land.Name = "listViewRealEstateSet_Land";
             this.listViewRealEstateSet_Land.Size = new System.Drawing.Size(665, 174);
@@ -391,45 +469,6 @@
             this.listViewRealEstateSet_Land.View = System.Windows.Forms.View.Details;
             this.listViewRealEstateSet_Land.Visible = false;
             this.listViewRealEstateSet_Land.SelectedIndexChanged += new System.EventHandler(this.listViewRealEstateSet_Land_SelectedIndexChanged);
-            // 
-            // Город
-            // 
-            this.Город.Text = "Город";
-            // 
-            // Улица
-            // 
-            this.Улица.Text = "Улица";
-            // 
-            // Номер_дома
-            // 
-            this.Номер_дома.Text = "Номер дома";
-            this.Номер_дома.Width = 80;
-            // 
-            // Номер_квартиры
-            // 
-            this.Номер_квартиры.Text = "Номер квартиры";
-            this.Номер_квартиры.Width = 103;
-            // 
-            // Широта
-            // 
-            this.Широта.Text = "Широта";
-            // 
-            // Долгота
-            // 
-            this.Долгота.Text = "Долгота";
-            // 
-            // Площадь
-            // 
-            this.Площадь.Text = "Площадь";
-            // 
-            // Количество_комнат
-            // 
-            this.Количество_комнат.Text = "Количество комнат";
-            this.Количество_комнат.Width = 113;
-            // 
-            // Этаж
-            // 
-            this.Этаж.Text = "Этаж";
             // 
             // Город1
             // 
@@ -459,51 +498,12 @@
             // Долгота1
             // 
             this.Долгота1.Text = "Долгота";
-            this.Долгота1.Width = 77;
+            this.Долгота1.Width = 86;
             // 
             // Площадь1
             // 
             this.Площадь1.Text = "Площадь";
-            this.Площадь1.Width = 77;
-            // 
-            // Город2
-            // 
-            this.Город2.Text = "Город";
-            this.Город2.Width = 73;
-            // 
-            // Улица2
-            // 
-            this.Улица2.Text = "Улица";
-            // 
-            // Номер_дома2
-            // 
-            this.Номер_дома2.Text = "Номер дома";
-            this.Номер_дома2.Width = 80;
-            // 
-            // Номер_квартиры2
-            // 
-            this.Номер_квартиры2.Text = "Номер квартиры";
-            this.Номер_квартиры2.Width = 98;
-            // 
-            // Широта2
-            // 
-            this.Широта2.Text = "Широта";
-            this.Широта2.Width = 71;
-            // 
-            // Долгота2
-            // 
-            this.Долгота2.Text = "Долгота";
-            this.Долгота2.Width = 74;
-            // 
-            // Площадь2
-            // 
-            this.Площадь2.Text = "Площадь";
-            this.Площадь2.Width = 71;
-            // 
-            // Количество_этажей1
-            // 
-            this.Количество_этажей1.Text = "Количество этажей";
-            this.Количество_этажей1.Width = 114;
+            this.Площадь1.Width = 90;
             // 
             // pictureBox1
             // 
@@ -520,7 +520,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(668, 398);
+            this.ClientSize = new System.Drawing.Size(675, 400);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listViewRealEstateSet_Land);
             this.Controls.Add(this.listViewRealEstateSet_House);

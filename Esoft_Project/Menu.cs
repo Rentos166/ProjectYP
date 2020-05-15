@@ -19,7 +19,9 @@ namespace Esoft_Project
 
         private void buttonOpenAgents_Click(object sender, EventArgs e)
         {
-
+            //Задаем новую форму из класса Риэлтор и открываем ее
+            Form formAgent = new FormAgents();
+            formAgent.Show();
         }
 
         private void buttonOpenClients_Click(object sender, EventArgs e)
