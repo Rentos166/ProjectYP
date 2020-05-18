@@ -54,6 +54,7 @@
             // 
             // textBoxFirstName
             // 
+            this.textBoxFirstName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxFirstName.Location = new System.Drawing.Point(6, 57);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(100, 20);
@@ -61,20 +62,23 @@
             // 
             // textBoxMiddleName
             // 
-            this.textBoxMiddleName.Location = new System.Drawing.Point(6, 97);
+            this.textBoxMiddleName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxMiddleName.Location = new System.Drawing.Point(6, 136);
             this.textBoxMiddleName.Name = "textBoxMiddleName";
             this.textBoxMiddleName.Size = new System.Drawing.Size(100, 20);
             this.textBoxMiddleName.TabIndex = 1;
             // 
             // textBoxLastName
             // 
-            this.textBoxLastName.Location = new System.Drawing.Point(6, 136);
+            this.textBoxLastName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxLastName.Location = new System.Drawing.Point(6, 96);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(100, 20);
             this.textBoxLastName.TabIndex = 2;
             // 
             // textBoxPhone
             // 
+            this.textBoxPhone.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxPhone.Location = new System.Drawing.Point(6, 175);
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(100, 20);
@@ -82,6 +86,7 @@
             // 
             // textBoxEmail
             // 
+            this.textBoxEmail.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxEmail.Location = new System.Drawing.Point(6, 214);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
@@ -101,7 +106,7 @@
             // 
             this.labelMiddleName.AutoSize = true;
             this.labelMiddleName.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelMiddleName.Location = new System.Drawing.Point(3, 81);
+            this.labelMiddleName.Location = new System.Drawing.Point(3, 120);
             this.labelMiddleName.Name = "labelMiddleName";
             this.labelMiddleName.Size = new System.Drawing.Size(63, 15);
             this.labelMiddleName.TabIndex = 6;
@@ -112,7 +117,7 @@
             // 
             this.labelLastName.AutoSize = true;
             this.labelLastName.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelLastName.Location = new System.Drawing.Point(3, 120);
+            this.labelLastName.Location = new System.Drawing.Point(3, 80);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(62, 15);
             this.labelLastName.TabIndex = 7;
@@ -154,7 +159,7 @@
             this.listViewClient.Location = new System.Drawing.Point(112, 57);
             this.listViewClient.MultiSelect = false;
             this.listViewClient.Name = "listViewClient";
-            this.listViewClient.Size = new System.Drawing.Size(404, 177);
+            this.listViewClient.Size = new System.Drawing.Size(396, 177);
             this.listViewClient.TabIndex = 10;
             this.listViewClient.UseCompatibleStateImageBehavior = false;
             this.listViewClient.View = System.Windows.Forms.View.Details;
@@ -163,26 +168,32 @@
             // ID
             // 
             this.ID.Text = "ID";
+            this.ID.Width = 25;
             // 
             // Имя
             // 
             this.Имя.Text = "Имя";
+            this.Имя.Width = 67;
             // 
             // Фамилия
             // 
             this.Фамилия.Text = "Фамилия";
+            this.Фамилия.Width = 71;
             // 
             // Отчество
             // 
             this.Отчество.Text = "Отчество";
+            this.Отчество.Width = 74;
             // 
             // Телефон
             // 
             this.Телефон.Text = "Телефон";
+            this.Телефон.Width = 78;
             // 
             // Email
             // 
             this.Email.Text = "Email";
+            this.Email.Width = 81;
             // 
             // buttonAdd
             // 

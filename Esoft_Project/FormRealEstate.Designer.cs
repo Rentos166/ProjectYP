@@ -125,6 +125,7 @@
             // 
             // comboBoxType
             // 
+            this.comboBoxType.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.comboBoxType.FormattingEnabled = true;
             this.comboBoxType.Items.AddRange(new object[] {
             "Квартира",
@@ -313,6 +314,7 @@
             // 
             // textBoxAddress_City
             // 
+            this.textBoxAddress_City.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxAddress_City.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBoxAddress_City.Location = new System.Drawing.Point(4, 29);
             this.textBoxAddress_City.Name = "textBoxAddress_City";
@@ -321,6 +323,7 @@
             // 
             // textBoxAddress_Street
             // 
+            this.textBoxAddress_Street.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxAddress_Street.Location = new System.Drawing.Point(4, 68);
             this.textBoxAddress_Street.Name = "textBoxAddress_Street";
             this.textBoxAddress_Street.Size = new System.Drawing.Size(121, 20);
@@ -329,6 +332,7 @@
             // 
             // textBoxAddress_House
             // 
+            this.textBoxAddress_House.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxAddress_House.Location = new System.Drawing.Point(4, 108);
             this.textBoxAddress_House.Name = "textBoxAddress_House";
             this.textBoxAddress_House.Size = new System.Drawing.Size(121, 20);
@@ -336,6 +340,7 @@
             // 
             // textBoxAddress_Number
             // 
+            this.textBoxAddress_Number.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxAddress_Number.Location = new System.Drawing.Point(4, 147);
             this.textBoxAddress_Number.Name = "textBoxAddress_Number";
             this.textBoxAddress_Number.Size = new System.Drawing.Size(121, 20);
@@ -343,6 +348,7 @@
             // 
             // textBoxCoordinate_latitude
             // 
+            this.textBoxCoordinate_latitude.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxCoordinate_latitude.Location = new System.Drawing.Point(131, 29);
             this.textBoxCoordinate_latitude.Name = "textBoxCoordinate_latitude";
             this.textBoxCoordinate_latitude.Size = new System.Drawing.Size(121, 20);
@@ -350,6 +356,7 @@
             // 
             // textBoxCoordinate_longitude
             // 
+            this.textBoxCoordinate_longitude.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxCoordinate_longitude.Location = new System.Drawing.Point(131, 68);
             this.textBoxCoordinate_longitude.Name = "textBoxCoordinate_longitude";
             this.textBoxCoordinate_longitude.Size = new System.Drawing.Size(121, 20);
@@ -357,6 +364,7 @@
             // 
             // textBoxTotalArea
             // 
+            this.textBoxTotalArea.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxTotalArea.Location = new System.Drawing.Point(258, 29);
             this.textBoxTotalArea.Name = "textBoxTotalArea";
             this.textBoxTotalArea.Size = new System.Drawing.Size(121, 20);
@@ -364,6 +372,7 @@
             // 
             // textBoxRooms
             // 
+            this.textBoxRooms.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxRooms.Location = new System.Drawing.Point(258, 68);
             this.textBoxRooms.Name = "textBoxRooms";
             this.textBoxRooms.Size = new System.Drawing.Size(121, 20);
@@ -371,6 +380,7 @@
             // 
             // textBoxFloor
             // 
+            this.textBoxFloor.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxFloor.Location = new System.Drawing.Point(258, 108);
             this.textBoxFloor.Name = "textBoxFloor";
             this.textBoxFloor.Size = new System.Drawing.Size(121, 20);
@@ -378,6 +388,7 @@
             // 
             // textBoxTotalFloors
             // 
+            this.textBoxTotalFloors.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxTotalFloors.Location = new System.Drawing.Point(131, 147);
             this.textBoxTotalFloors.Name = "textBoxTotalFloors";
             this.textBoxTotalFloors.Size = new System.Drawing.Size(121, 20);
@@ -483,26 +494,31 @@
             // Номер_дома1
             // 
             this.Номер_дома1.Text = "Номер дома";
+            this.Номер_дома1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Номер_дома1.Width = 120;
             // 
             // Номер_квартиры1
             // 
             this.Номер_квартиры1.Text = "Номер квартиры";
+            this.Номер_квартиры1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Номер_квартиры1.Width = 128;
             // 
             // Широта1
             // 
             this.Широта1.Text = "Широта";
+            this.Широта1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Широта1.Width = 81;
             // 
             // Долгота1
             // 
             this.Долгота1.Text = "Долгота";
+            this.Долгота1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Долгота1.Width = 86;
             // 
             // Площадь1
             // 
             this.Площадь1.Text = "Площадь";
+            this.Площадь1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Площадь1.Width = 90;
             // 
             // pictureBox1

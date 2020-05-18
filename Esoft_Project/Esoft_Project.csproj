@@ -79,6 +79,12 @@
     <Compile Include="FormRealEstate.Designer.cs">
       <DependentUpon>FormRealEstate.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSyply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSyply.Designer.cs">
+      <DependentUpon>FormSyply.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     <Compile Include="RealEstateSet.cs">
       <DependentUpon>ModelTutorial.tt</DependentUpon>
     </Compile>
+    <Compile Include="SyppySet.cs">
+      <DependentUpon>ModelTutorial.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAgents.resx">
       <DependentUpon>FormAgents.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRealEstate.resx">
       <DependentUpon>FormRealEstate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSyply.resx">
+      <DependentUpon>FormSyply.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

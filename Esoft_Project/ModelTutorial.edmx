@@ -43,10 +43,69 @@
           <Property Name="Rooms" Type="int" />
           <Property Name="Floor" Type="int" />
         </EntityType>
+        <EntityType Name="SyppySet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdAgent" Type="int" Nullable="false" />
+          <Property Name="IdClient" Type="int" Nullable="false" />
+          <Property Name="IdRealEstate" Type="int" Nullable="false" />
+          <Property Name="Price" Type="bigint" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_SyppySet_AgentSet">
+          <End Role="AgentSet" Type="Self.AgentSet" Multiplicity="1" />
+          <End Role="SyppySet" Type="Self.SyppySet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AgentSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SyppySet">
+              <PropertyRef Name="IdAgent" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SyppySet_ClientsSet">
+          <End Role="ClientsSet" Type="Self.ClientsSet" Multiplicity="1" />
+          <End Role="SyppySet" Type="Self.SyppySet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ClientsSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SyppySet">
+              <PropertyRef Name="IdClient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SyppySet_RealEstateSet">
+          <End Role="RealEstateSet" Type="Self.RealEstateSet" Multiplicity="1" />
+          <End Role="SyppySet" Type="Self.SyppySet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RealEstateSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SyppySet">
+              <PropertyRef Name="IdRealEstate" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="Хранилище Esoft_ProjectModelContainer">
           <EntitySet Name="AgentSet" EntityType="Self.AgentSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ClientsSet" EntityType="Self.ClientsSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="RealEstateSet" EntityType="Self.RealEstateSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SyppySet" EntityType="Self.SyppySet" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_SyppySet_AgentSet" Association="Self.FK_SyppySet_AgentSet">
+            <End Role="AgentSet" EntitySet="AgentSet" />
+            <End Role="SyppySet" EntitySet="SyppySet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SyppySet_ClientsSet" Association="Self.FK_SyppySet_ClientsSet">
+            <End Role="ClientsSet" EntitySet="ClientsSet" />
+            <End Role="SyppySet" EntitySet="SyppySet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SyppySet_RealEstateSet" Association="Self.FK_SyppySet_RealEstateSet">
+            <End Role="RealEstateSet" EntitySet="RealEstateSet" />
+            <End Role="SyppySet" EntitySet="SyppySet" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
@@ -62,6 +121,7 @@
           <Property Name="MiddleName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="DealShare" Type="Int32" />
+          <NavigationProperty Name="SyppySet" Relationship="Self.FK_SyppySet_AgentSet" FromRole="AgentSet" ToRole="SyppySet" />
         </EntityType>
         <EntityType Name="ClientsSet">
           <Key>
@@ -73,6 +133,7 @@
           <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="SyppySet" Relationship="Self.FK_SyppySet_ClientsSet" FromRole="ClientsSet" ToRole="SyppySet" />
         </EntityType>
         <EntityType Name="RealEstateSet">
           <Key>
@@ -90,11 +151,74 @@
           <Property Name="TotalFloors" Type="Int32" />
           <Property Name="Rooms" Type="Int32" />
           <Property Name="Floor" Type="Int32" />
+          <NavigationProperty Name="SyppySet" Relationship="Self.FK_SyppySet_RealEstateSet" FromRole="RealEstateSet" ToRole="SyppySet" />
         </EntityType>
+        <EntityType Name="SyppySet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdAgent" Type="Int32" Nullable="false" />
+          <Property Name="IdClient" Type="Int32" Nullable="false" />
+          <Property Name="IdRealEstate" Type="Int32" Nullable="false" />
+          <Property Name="Price" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="AgentSet" Relationship="Self.FK_SyppySet_AgentSet" FromRole="SyppySet" ToRole="AgentSet" />
+          <NavigationProperty Name="ClientsSet" Relationship="Self.FK_SyppySet_ClientsSet" FromRole="SyppySet" ToRole="ClientsSet" />
+          <NavigationProperty Name="RealEstateSet" Relationship="Self.FK_SyppySet_RealEstateSet" FromRole="SyppySet" ToRole="RealEstateSet" />
+        </EntityType>
+        <Association Name="FK_SyppySet_AgentSet">
+          <End Role="AgentSet" Type="Self.AgentSet" Multiplicity="1" />
+          <End Role="SyppySet" Type="Self.SyppySet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AgentSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SyppySet">
+              <PropertyRef Name="IdAgent" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SyppySet_ClientsSet">
+          <End Role="ClientsSet" Type="Self.ClientsSet" Multiplicity="1" />
+          <End Role="SyppySet" Type="Self.SyppySet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ClientsSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SyppySet">
+              <PropertyRef Name="IdClient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SyppySet_RealEstateSet">
+          <End Role="RealEstateSet" Type="Self.RealEstateSet" Multiplicity="1" />
+          <End Role="SyppySet" Type="Self.SyppySet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RealEstateSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SyppySet">
+              <PropertyRef Name="IdRealEstate" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="Esoft_ProjectEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="AgentSet" EntityType="Self.AgentSet" />
           <EntitySet Name="ClientsSet" EntityType="Self.ClientsSet" />
           <EntitySet Name="RealEstateSet" EntityType="Self.RealEstateSet" />
+          <EntitySet Name="SyppySet" EntityType="Self.SyppySet" />
+          <AssociationSet Name="FK_SyppySet_AgentSet" Association="Self.FK_SyppySet_AgentSet">
+            <End Role="AgentSet" EntitySet="AgentSet" />
+            <End Role="SyppySet" EntitySet="SyppySet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SyppySet_ClientsSet" Association="Self.FK_SyppySet_ClientsSet">
+            <End Role="ClientsSet" EntitySet="ClientsSet" />
+            <End Role="SyppySet" EntitySet="SyppySet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SyppySet_RealEstateSet" Association="Self.FK_SyppySet_RealEstateSet">
+            <End Role="RealEstateSet" EntitySet="RealEstateSet" />
+            <End Role="SyppySet" EntitySet="SyppySet" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -140,6 +264,17 @@
                 <ScalarProperty Name="TotalFloors" ColumnName="TotalFloors" />
                 <ScalarProperty Name="Rooms" ColumnName="Rooms" />
                 <ScalarProperty Name="Floor" ColumnName="Floor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SyppySet">
+            <EntityTypeMapping TypeName="Esoft_ProjectModel.SyppySet">
+              <MappingFragment StoreEntitySet="SyppySet">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IdAgent" ColumnName="IdAgent" />
+                <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+                <ScalarProperty Name="IdRealEstate" ColumnName="IdRealEstate" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

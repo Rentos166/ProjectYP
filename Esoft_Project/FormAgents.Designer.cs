@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonDel = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
@@ -46,18 +45,9 @@
             this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.textBoxMiddleName = new System.Windows.Forms.TextBox();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Esoft_Project.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(259, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(251, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 29;
-            this.pictureBox1.TabStop = false;
             // 
             // buttonDel
             // 
@@ -126,22 +116,23 @@
             // Имя
             // 
             this.Имя.Text = "Имя";
-            this.Имя.Width = 77;
+            this.Имя.Width = 80;
             // 
             // Фамилия
             // 
             this.Фамилия.Text = "Фамилия";
-            this.Фамилия.Width = 82;
+            this.Фамилия.Width = 90;
             // 
             // Отчество
             // 
             this.Отчество.Text = "Отчество";
-            this.Отчество.Width = 85;
+            this.Отчество.Width = 89;
             // 
             // Процент
             // 
             this.Процент.Text = "Процент";
-            this.Процент.Width = 154;
+            this.Процент.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Процент.Width = 62;
             // 
             // labelProcent
             // 
@@ -185,6 +176,7 @@
             // 
             // textBoxDealShare
             // 
+            this.textBoxDealShare.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxDealShare.Location = new System.Drawing.Point(8, 195);
             this.textBoxDealShare.Name = "textBoxDealShare";
             this.textBoxDealShare.Size = new System.Drawing.Size(100, 20);
@@ -192,6 +184,7 @@
             // 
             // textBoxLastName
             // 
+            this.textBoxLastName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxLastName.Location = new System.Drawing.Point(8, 151);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(100, 20);
@@ -199,6 +192,7 @@
             // 
             // textBoxMiddleName
             // 
+            this.textBoxMiddleName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxMiddleName.Location = new System.Drawing.Point(8, 106);
             this.textBoxMiddleName.Name = "textBoxMiddleName";
             this.textBoxMiddleName.Size = new System.Drawing.Size(100, 20);
@@ -206,16 +200,27 @@
             // 
             // textBoxFirstName
             // 
+            this.textBoxFirstName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxFirstName.Location = new System.Drawing.Point(8, 60);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(100, 20);
             this.textBoxFirstName.TabIndex = 15;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Esoft_Project.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(259, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(251, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormAgents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 284);
+            this.ClientSize = new System.Drawing.Size(534, 284);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.buttonEdit);
