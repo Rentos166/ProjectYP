@@ -40,8 +40,16 @@ namespace Esoft_Project
 
         private void buttonOpenDemands_Click(object sender, EventArgs e)
         {
+            //Задаем новую форму из класса Предложения и открываем ее
             Form formSyply = new FormSyply();
             formSyply.Show();
+        }
+
+        private void buttonOpenSupplies_Click(object sender, EventArgs e)
+        {
+            //Задаем новую форму из класса Потребности и открываем ее
+            Form formDemand = new FormDemand();
+            formDemand.Show();
         }
     }
 }
