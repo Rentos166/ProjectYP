@@ -93,94 +93,106 @@
             this.textBoxMinFloors = new System.Windows.Forms.TextBox();
             this.labelMaxFloors = new System.Windows.Forms.Label();
             this.labelMinFloors = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelAgent
             // 
             this.labelAgent.AutoSize = true;
-            this.labelAgent.Location = new System.Drawing.Point(9, 5);
+            this.labelAgent.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAgent.Location = new System.Drawing.Point(10, 6);
             this.labelAgent.Name = "labelAgent";
-            this.labelAgent.Size = new System.Drawing.Size(49, 13);
+            this.labelAgent.Size = new System.Drawing.Size(56, 15);
             this.labelAgent.TabIndex = 0;
             this.labelAgent.Text = "Риэлтор";
             // 
             // labelClient
             // 
             this.labelClient.AutoSize = true;
-            this.labelClient.Location = new System.Drawing.Point(9, 45);
+            this.labelClient.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelClient.Location = new System.Drawing.Point(10, 52);
             this.labelClient.Name = "labelClient";
-            this.labelClient.Size = new System.Drawing.Size(43, 13);
+            this.labelClient.Size = new System.Drawing.Size(49, 15);
             this.labelClient.TabIndex = 1;
             this.labelClient.Text = "Клиент";
             // 
             // labelType
             // 
             this.labelType.AutoSize = true;
-            this.labelType.Location = new System.Drawing.Point(9, 85);
+            this.labelType.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelType.Location = new System.Drawing.Point(10, 98);
             this.labelType.Name = "labelType";
-            this.labelType.Size = new System.Drawing.Size(51, 13);
+            this.labelType.Size = new System.Drawing.Size(54, 15);
             this.labelType.TabIndex = 2;
             this.labelType.Text = "Тип О.Н.";
             // 
             // labelMinPrice
             // 
             this.labelMinPrice.AutoSize = true;
-            this.labelMinPrice.Location = new System.Drawing.Point(9, 125);
+            this.labelMinPrice.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMinPrice.Location = new System.Drawing.Point(10, 144);
             this.labelMinPrice.Name = "labelMinPrice";
-            this.labelMinPrice.Size = new System.Drawing.Size(58, 13);
+            this.labelMinPrice.Size = new System.Drawing.Size(66, 15);
             this.labelMinPrice.TabIndex = 3;
             this.labelMinPrice.Text = "Мин. цена";
             // 
             // labelMaxPrice
             // 
             this.labelMaxPrice.AutoSize = true;
-            this.labelMaxPrice.Location = new System.Drawing.Point(9, 164);
+            this.labelMaxPrice.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMaxPrice.Location = new System.Drawing.Point(10, 189);
             this.labelMaxPrice.Name = "labelMaxPrice";
-            this.labelMaxPrice.Size = new System.Drawing.Size(64, 13);
+            this.labelMaxPrice.Size = new System.Drawing.Size(73, 15);
             this.labelMaxPrice.TabIndex = 4;
             this.labelMaxPrice.Text = "Макс. цена";
             // 
             // comboBoxAgents
             // 
+            this.comboBoxAgents.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.comboBoxAgents.FormattingEnabled = true;
-            this.comboBoxAgents.Location = new System.Drawing.Point(12, 21);
+            this.comboBoxAgents.Location = new System.Drawing.Point(14, 24);
             this.comboBoxAgents.Name = "comboBoxAgents";
-            this.comboBoxAgents.Size = new System.Drawing.Size(129, 21);
+            this.comboBoxAgents.Size = new System.Drawing.Size(150, 23);
             this.comboBoxAgents.TabIndex = 6;
             // 
             // comboBoxClients
             // 
+            this.comboBoxClients.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.comboBoxClients.FormattingEnabled = true;
-            this.comboBoxClients.Location = new System.Drawing.Point(12, 61);
+            this.comboBoxClients.Location = new System.Drawing.Point(14, 70);
             this.comboBoxClients.Name = "comboBoxClients";
-            this.comboBoxClients.Size = new System.Drawing.Size(129, 21);
+            this.comboBoxClients.Size = new System.Drawing.Size(150, 23);
             this.comboBoxClients.TabIndex = 7;
             // 
             // comboBoxType
             // 
+            this.comboBoxType.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.comboBoxType.FormattingEnabled = true;
             this.comboBoxType.Items.AddRange(new object[] {
             "Квартира",
             "Дом",
             "Земля"});
-            this.comboBoxType.Location = new System.Drawing.Point(12, 101);
+            this.comboBoxType.Location = new System.Drawing.Point(14, 117);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(129, 21);
+            this.comboBoxType.Size = new System.Drawing.Size(150, 23);
             this.comboBoxType.TabIndex = 8;
             this.comboBoxType.SelectedIndexChanged += new System.EventHandler(this.comboBoxType_SelectedIndexChanged);
             // 
             // textBoxMinPrice
             // 
-            this.textBoxMinPrice.Location = new System.Drawing.Point(12, 141);
+            this.textBoxMinPrice.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxMinPrice.Location = new System.Drawing.Point(14, 163);
             this.textBoxMinPrice.Name = "textBoxMinPrice";
-            this.textBoxMinPrice.Size = new System.Drawing.Size(129, 20);
+            this.textBoxMinPrice.Size = new System.Drawing.Size(150, 23);
             this.textBoxMinPrice.TabIndex = 9;
             // 
             // textBoxMaxPrice
             // 
-            this.textBoxMaxPrice.Location = new System.Drawing.Point(12, 180);
+            this.textBoxMaxPrice.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxMaxPrice.Location = new System.Drawing.Point(14, 208);
             this.textBoxMaxPrice.Name = "textBoxMaxPrice";
-            this.textBoxMaxPrice.Size = new System.Drawing.Size(129, 20);
+            this.textBoxMaxPrice.Size = new System.Drawing.Size(150, 23);
             this.textBoxMaxPrice.TabIndex = 10;
             // 
             // listViewDemandSetRoom
@@ -199,16 +211,18 @@
             this.MaxRooms,
             this.MinFloor,
             this.MaxFloor});
+            this.listViewDemandSetRoom.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewDemandSetRoom.FullRowSelect = true;
             this.listViewDemandSetRoom.GridLines = true;
             this.listViewDemandSetRoom.HideSelection = false;
-            this.listViewDemandSetRoom.Location = new System.Drawing.Point(171, 53);
+            this.listViewDemandSetRoom.Location = new System.Drawing.Point(185, 117);
             this.listViewDemandSetRoom.MultiSelect = false;
             this.listViewDemandSetRoom.Name = "listViewDemandSetRoom";
-            this.listViewDemandSetRoom.Size = new System.Drawing.Size(1128, 183);
+            this.listViewDemandSetRoom.Size = new System.Drawing.Size(1115, 211);
             this.listViewDemandSetRoom.TabIndex = 11;
             this.listViewDemandSetRoom.UseCompatibleStateImageBehavior = false;
             this.listViewDemandSetRoom.View = System.Windows.Forms.View.Details;
+            this.listViewDemandSetRoom.SelectedIndexChanged += new System.EventHandler(this.listViewDemandSetRoom_SelectedIndexChanged);
             // 
             // IdAgent
             // 
@@ -278,35 +292,37 @@
             // buttonDel
             // 
             this.buttonDel.BackColor = System.Drawing.SystemColors.Highlight;
-            this.buttonDel.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDel.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonDel.Location = new System.Drawing.Point(824, 528);
+            this.buttonDel.Location = new System.Drawing.Point(857, 369);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(102, 32);
+            this.buttonDel.Size = new System.Drawing.Size(189, 76);
             this.buttonDel.TabIndex = 14;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = false;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // buttonEdit
             // 
             this.buttonEdit.BackColor = System.Drawing.SystemColors.Highlight;
-            this.buttonEdit.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEdit.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEdit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonEdit.Location = new System.Drawing.Point(716, 528);
+            this.buttonEdit.Location = new System.Drawing.Point(662, 369);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(102, 32);
+            this.buttonEdit.Size = new System.Drawing.Size(189, 76);
             this.buttonEdit.TabIndex = 13;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonAdd
             // 
             this.buttonAdd.BackColor = System.Drawing.SystemColors.Highlight;
-            this.buttonAdd.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAdd.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonAdd.Location = new System.Drawing.Point(608, 528);
+            this.buttonAdd.Location = new System.Drawing.Point(466, 369);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(102, 32);
+            this.buttonAdd.Size = new System.Drawing.Size(189, 76);
             this.buttonAdd.TabIndex = 12;
             this.buttonAdd.Text = "Создать";
             this.buttonAdd.UseVisualStyleBackColor = false;
@@ -315,97 +331,109 @@
             // labelMinSquare
             // 
             this.labelMinSquare.AutoSize = true;
-            this.labelMinSquare.Location = new System.Drawing.Point(9, 203);
+            this.labelMinSquare.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMinSquare.Location = new System.Drawing.Point(10, 234);
             this.labelMinSquare.Name = "labelMinSquare";
-            this.labelMinSquare.Size = new System.Drawing.Size(79, 13);
+            this.labelMinSquare.Size = new System.Drawing.Size(90, 15);
             this.labelMinSquare.TabIndex = 15;
             this.labelMinSquare.Text = "Мин. площадь";
             // 
             // labelMaxSquare
             // 
             this.labelMaxSquare.AutoSize = true;
-            this.labelMaxSquare.Location = new System.Drawing.Point(9, 242);
+            this.labelMaxSquare.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMaxSquare.Location = new System.Drawing.Point(10, 279);
             this.labelMaxSquare.Name = "labelMaxSquare";
-            this.labelMaxSquare.Size = new System.Drawing.Size(85, 13);
+            this.labelMaxSquare.Size = new System.Drawing.Size(97, 15);
             this.labelMaxSquare.TabIndex = 16;
             this.labelMaxSquare.Text = "Макс. площадь";
             // 
             // labelMinRooms
             // 
             this.labelMinRooms.AutoSize = true;
-            this.labelMinRooms.Location = new System.Drawing.Point(9, 281);
+            this.labelMinRooms.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMinRooms.Location = new System.Drawing.Point(10, 324);
             this.labelMinRooms.Name = "labelMinRooms";
-            this.labelMinRooms.Size = new System.Drawing.Size(132, 13);
+            this.labelMinRooms.Size = new System.Drawing.Size(154, 15);
             this.labelMinRooms.TabIndex = 17;
             this.labelMinRooms.Text = "Мин. количество комнат";
             // 
             // labelMaxRooms
             // 
             this.labelMaxRooms.AutoSize = true;
-            this.labelMaxRooms.Location = new System.Drawing.Point(9, 320);
+            this.labelMaxRooms.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMaxRooms.Location = new System.Drawing.Point(10, 369);
             this.labelMaxRooms.Name = "labelMaxRooms";
-            this.labelMaxRooms.Size = new System.Drawing.Size(138, 13);
+            this.labelMaxRooms.Size = new System.Drawing.Size(161, 15);
             this.labelMaxRooms.TabIndex = 18;
             this.labelMaxRooms.Text = "Макс. количество комнат";
             // 
             // labelMinFloor
             // 
             this.labelMinFloor.AutoSize = true;
-            this.labelMinFloor.Location = new System.Drawing.Point(9, 359);
+            this.labelMinFloor.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMinFloor.Location = new System.Drawing.Point(10, 415);
             this.labelMinFloor.Name = "labelMinFloor";
-            this.labelMinFloor.Size = new System.Drawing.Size(59, 13);
+            this.labelMinFloor.Size = new System.Drawing.Size(67, 15);
             this.labelMinFloor.TabIndex = 19;
             this.labelMinFloor.Text = "Мин. этаж";
             // 
             // labelMaxFloor
             // 
             this.labelMaxFloor.AutoSize = true;
-            this.labelMaxFloor.Location = new System.Drawing.Point(9, 398);
+            this.labelMaxFloor.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMaxFloor.Location = new System.Drawing.Point(10, 467);
             this.labelMaxFloor.Name = "labelMaxFloor";
-            this.labelMaxFloor.Size = new System.Drawing.Size(65, 13);
+            this.labelMaxFloor.Size = new System.Drawing.Size(74, 15);
             this.labelMaxFloor.TabIndex = 20;
             this.labelMaxFloor.Text = "Макс. этаж";
             // 
             // textBoxMinSquare
             // 
-            this.textBoxMinSquare.Location = new System.Drawing.Point(12, 219);
+            this.textBoxMinSquare.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxMinSquare.Location = new System.Drawing.Point(14, 253);
             this.textBoxMinSquare.Name = "textBoxMinSquare";
-            this.textBoxMinSquare.Size = new System.Drawing.Size(129, 20);
+            this.textBoxMinSquare.Size = new System.Drawing.Size(150, 23);
             this.textBoxMinSquare.TabIndex = 21;
             // 
             // textBoxMaxSquare
             // 
-            this.textBoxMaxSquare.Location = new System.Drawing.Point(12, 258);
+            this.textBoxMaxSquare.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxMaxSquare.Location = new System.Drawing.Point(14, 298);
             this.textBoxMaxSquare.Name = "textBoxMaxSquare";
-            this.textBoxMaxSquare.Size = new System.Drawing.Size(129, 20);
+            this.textBoxMaxSquare.Size = new System.Drawing.Size(150, 23);
             this.textBoxMaxSquare.TabIndex = 22;
             // 
             // textBoxMinRooms
             // 
-            this.textBoxMinRooms.Location = new System.Drawing.Point(12, 297);
+            this.textBoxMinRooms.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxMinRooms.Location = new System.Drawing.Point(14, 343);
             this.textBoxMinRooms.Name = "textBoxMinRooms";
-            this.textBoxMinRooms.Size = new System.Drawing.Size(129, 20);
+            this.textBoxMinRooms.Size = new System.Drawing.Size(150, 23);
             this.textBoxMinRooms.TabIndex = 23;
             // 
             // textBoxMaxRooms
             // 
-            this.textBoxMaxRooms.Location = new System.Drawing.Point(12, 336);
+            this.textBoxMaxRooms.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxMaxRooms.Location = new System.Drawing.Point(14, 388);
             this.textBoxMaxRooms.Name = "textBoxMaxRooms";
-            this.textBoxMaxRooms.Size = new System.Drawing.Size(129, 20);
+            this.textBoxMaxRooms.Size = new System.Drawing.Size(150, 23);
             this.textBoxMaxRooms.TabIndex = 24;
             // 
             // textBoxMinFloor
             // 
-            this.textBoxMinFloor.Location = new System.Drawing.Point(12, 375);
+            this.textBoxMinFloor.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxMinFloor.Location = new System.Drawing.Point(14, 433);
             this.textBoxMinFloor.Name = "textBoxMinFloor";
-            this.textBoxMinFloor.Size = new System.Drawing.Size(129, 20);
+            this.textBoxMinFloor.Size = new System.Drawing.Size(150, 23);
             this.textBoxMinFloor.TabIndex = 25;
             // 
             // textBoxMaxFloor
             // 
-            this.textBoxMaxFloor.Location = new System.Drawing.Point(12, 414);
+            this.textBoxMaxFloor.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxMaxFloor.Location = new System.Drawing.Point(14, 485);
             this.textBoxMaxFloor.Name = "textBoxMaxFloor";
-            this.textBoxMaxFloor.Size = new System.Drawing.Size(129, 20);
+            this.textBoxMaxFloor.Size = new System.Drawing.Size(150, 23);
             this.textBoxMaxFloor.TabIndex = 26;
             // 
             // listViewDemandSetHouse
@@ -422,21 +450,23 @@
             this.columnHeader9,
             this.columnHeader12,
             this.columnHeader13});
+            this.listViewDemandSetHouse.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewDemandSetHouse.FullRowSelect = true;
             this.listViewDemandSetHouse.GridLines = true;
             this.listViewDemandSetHouse.HideSelection = false;
-            this.listViewDemandSetHouse.Location = new System.Drawing.Point(156, 150);
+            this.listViewDemandSetHouse.Location = new System.Drawing.Point(185, 118);
             this.listViewDemandSetHouse.MultiSelect = false;
             this.listViewDemandSetHouse.Name = "listViewDemandSetHouse";
-            this.listViewDemandSetHouse.Size = new System.Drawing.Size(1128, 183);
+            this.listViewDemandSetHouse.Size = new System.Drawing.Size(1115, 211);
             this.listViewDemandSetHouse.TabIndex = 27;
             this.listViewDemandSetHouse.UseCompatibleStateImageBehavior = false;
             this.listViewDemandSetHouse.View = System.Windows.Forms.View.Details;
+            this.listViewDemandSetHouse.SelectedIndexChanged += new System.EventHandler(this.listViewDemandSetHouse_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "ID риэлтора";
-            this.columnHeader1.Width = 76;
+            this.columnHeader1.Width = 79;
             // 
             // columnHeader2
             // 
@@ -476,7 +506,7 @@
             // columnHeader9
             // 
             this.columnHeader9.Text = "Макс. площадь";
-            this.columnHeader9.Width = 127;
+            this.columnHeader9.Width = 115;
             // 
             // columnHeader12
             // 
@@ -500,16 +530,18 @@
             this.columnHeader18,
             this.columnHeader19,
             this.columnHeader20});
+            this.listViewDemandSetLand.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewDemandSetLand.FullRowSelect = true;
             this.listViewDemandSetLand.GridLines = true;
             this.listViewDemandSetLand.HideSelection = false;
-            this.listViewDemandSetLand.Location = new System.Drawing.Point(156, 339);
+            this.listViewDemandSetLand.Location = new System.Drawing.Point(185, 118);
             this.listViewDemandSetLand.MultiSelect = false;
             this.listViewDemandSetLand.Name = "listViewDemandSetLand";
-            this.listViewDemandSetLand.Size = new System.Drawing.Size(1128, 183);
+            this.listViewDemandSetLand.Size = new System.Drawing.Size(1115, 211);
             this.listViewDemandSetLand.TabIndex = 28;
             this.listViewDemandSetLand.UseCompatibleStateImageBehavior = false;
             this.listViewDemandSetLand.View = System.Windows.Forms.View.Details;
+            this.listViewDemandSetLand.SelectedIndexChanged += new System.EventHandler(this.listViewDemandSetLand_SelectedIndexChanged);
             // 
             // columnHeader10
             // 
@@ -558,41 +590,58 @@
             // 
             // textBoxMaxFloors
             // 
-            this.textBoxMaxFloors.Location = new System.Drawing.Point(12, 494);
+            this.textBoxMaxFloors.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxMaxFloors.Location = new System.Drawing.Point(15, 387);
             this.textBoxMaxFloors.Name = "textBoxMaxFloors";
-            this.textBoxMaxFloors.Size = new System.Drawing.Size(129, 20);
+            this.textBoxMaxFloors.Size = new System.Drawing.Size(150, 23);
             this.textBoxMaxFloors.TabIndex = 32;
+            this.textBoxMaxFloors.TextChanged += new System.EventHandler(this.textBoxMaxFloors_TextChanged);
             // 
             // textBoxMinFloors
             // 
-            this.textBoxMinFloors.Location = new System.Drawing.Point(12, 455);
+            this.textBoxMinFloors.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxMinFloors.Location = new System.Drawing.Point(14, 343);
             this.textBoxMinFloors.Name = "textBoxMinFloors";
-            this.textBoxMinFloors.Size = new System.Drawing.Size(129, 20);
+            this.textBoxMinFloors.Size = new System.Drawing.Size(150, 23);
             this.textBoxMinFloors.TabIndex = 31;
             // 
             // labelMaxFloors
             // 
             this.labelMaxFloors.AutoSize = true;
-            this.labelMaxFloors.Location = new System.Drawing.Point(9, 478);
+            this.labelMaxFloors.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMaxFloors.Location = new System.Drawing.Point(11, 369);
             this.labelMaxFloors.Name = "labelMaxFloors";
-            this.labelMaxFloors.Size = new System.Drawing.Size(123, 13);
+            this.labelMaxFloors.Size = new System.Drawing.Size(142, 15);
             this.labelMaxFloors.TabIndex = 30;
             this.labelMaxFloors.Text = "Макс. этажность дома";
             // 
             // labelMinFloors
             // 
             this.labelMinFloors.AutoSize = true;
-            this.labelMinFloors.Location = new System.Drawing.Point(9, 439);
+            this.labelMinFloors.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMinFloors.Location = new System.Drawing.Point(11, 325);
             this.labelMinFloors.Name = "labelMinFloors";
-            this.labelMinFloors.Size = new System.Drawing.Size(117, 13);
+            this.labelMinFloors.Size = new System.Drawing.Size(135, 15);
             this.labelMinFloors.TabIndex = 29;
             this.labelMinFloors.Text = "Мин. этажность дома";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Esoft_Project.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(548, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(405, 109);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormDemand
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1408, 628);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1307, 515);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBoxMaxFloors);
             this.Controls.Add(this.textBoxMinFloors);
             this.Controls.Add(this.labelMaxFloors);
@@ -625,10 +674,12 @@
             this.Controls.Add(this.labelType);
             this.Controls.Add(this.labelClient);
             this.Controls.Add(this.labelAgent);
+            this.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Name = "FormDemand";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Потребности";
             this.Load += new System.EventHandler(this.FormDemand_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -701,5 +752,6 @@
         private System.Windows.Forms.TextBox textBoxMinFloors;
         private System.Windows.Forms.Label labelMaxFloors;
         private System.Windows.Forms.Label labelMinFloors;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -532,10 +532,10 @@ namespace Esoft_Project
                 MessageBox.Show("Невозможно удалить, эта запись используется", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void FormRealEstate_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
-            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number != 43) //цифры, клавиша BackSpace и запятая а ASCII
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8) //цифры, клавиша BackSpace 
             {
                 e.Handled = true;
             }
