@@ -19,7 +19,7 @@ namespace Esoft_Project
             foreach (AgentSet agentSet in Program.wftDb.AgentSet)
             {
                 //добавляем информацию, которую хотим видеть в строке comboBox-a
-                string[] item = { agentSet.Id.ToString() + ".", agentSet.LastName, agentSet.FirstName.Remove(1) + ".", agentSet.MiddleName.Remove(1) + ".", };
+                string[] item = { agentSet.Id.ToString() + ".", agentSet.LastName, agentSet.FirstName.Remove(1) + ". ", agentSet.MiddleName.Remove(1) + " .", };
                 comboBoxAgents.Items.Add(string.Join(" ", item));
             }
         }
@@ -52,7 +52,7 @@ namespace Esoft_Project
                     //указываем необходимые поля
                     //Id и ФИО агента
                     demandSet.IdAgent.ToString(),
-                    demandSet.AgentSet.LastName +" "+demandSet.AgentSet.FirstName.Remove(1) +"."+ demandSet.AgentSet.MiddleName.Remove(1)+".",
+                    demandSet.AgentSet.LastName +" "+demandSet.AgentSet.FirstName.Remove(1) +". "+ demandSet.AgentSet.MiddleName.Remove(1)+" .",
                     //Id и ФИО клиента
                     demandSet.IdClient.ToString(),
                     demandSet.ClientsSet.LastName +" "+demandSet.ClientsSet.FirstName.Remove(1) +". "+ demandSet.ClientsSet.MiddleName.Remove(1)+" .",
@@ -80,7 +80,7 @@ namespace Esoft_Project
                     //указываем необходимые поля
                     //Id и ФИО агента
                     demandSet.IdAgent.ToString(),
-                    demandSet.AgentSet.LastName +" "+demandSet.AgentSet.FirstName.Remove(1) +"."+ demandSet.AgentSet.MiddleName.Remove(1)+".",
+                    demandSet.AgentSet.LastName +" "+demandSet.AgentSet.FirstName.Remove(1) +". "+ demandSet.AgentSet.MiddleName.Remove(1)+" .",
                     //Id и ФИО клиента
                     demandSet.IdClient.ToString(),
                     demandSet.ClientsSet.LastName +" "+demandSet.ClientsSet.FirstName.Remove(1) +". "+ demandSet.ClientsSet.MiddleName.Remove(1)+" .",
@@ -106,7 +106,7 @@ namespace Esoft_Project
                     //указываем необходимые поля
                     //Id и ФИО агента
                     demandSet.IdAgent.ToString(),
-                    demandSet.AgentSet.LastName +" "+demandSet.AgentSet.FirstName.Remove(1) +"."+ demandSet.AgentSet.MiddleName.Remove(1)+".",
+                    demandSet.AgentSet.LastName +" "+demandSet.AgentSet.FirstName.Remove(1) +". "+ demandSet.AgentSet.MiddleName.Remove(1)+" .",
                     //Id и ФИО клиента
                     demandSet.IdClient.ToString(),
                     demandSet.ClientsSet.LastName +" "+demandSet.ClientsSet.FirstName.Remove(1) +". "+ demandSet.ClientsSet.MiddleName.Remove(1)+" .",
@@ -615,10 +615,10 @@ namespace Esoft_Project
                 MessageBox.Show("Невозможно удалить, эта запись используются", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void FormRealEstate_KeyPress(object sender, KeyPressEventArgs e)
+        private void FormDemand_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
-            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number != 43) //цифры, клавиша BackSpace и запятая а ASCII
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8) //цифры, клавиша BackSpace 
             {
                 e.Handled = true;
             }

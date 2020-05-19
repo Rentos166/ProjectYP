@@ -181,6 +181,7 @@
             this.textBoxDealShare.Name = "textBoxDealShare";
             this.textBoxDealShare.Size = new System.Drawing.Size(100, 20);
             this.textBoxDealShare.TabIndex = 18;
+            this.textBoxDealShare.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAgents_KeyPress);
             // 
             // textBoxLastName
             // 
@@ -189,6 +190,7 @@
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(100, 20);
             this.textBoxLastName.TabIndex = 17;
+            this.textBoxLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAgents_KeyPress);
             // 
             // textBoxMiddleName
             // 
@@ -197,6 +199,7 @@
             this.textBoxMiddleName.Name = "textBoxMiddleName";
             this.textBoxMiddleName.Size = new System.Drawing.Size(100, 20);
             this.textBoxMiddleName.TabIndex = 16;
+            this.textBoxMiddleName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAgents_KeyPress);
             // 
             // textBoxFirstName
             // 
@@ -205,6 +208,7 @@
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(100, 20);
             this.textBoxFirstName.TabIndex = 15;
+            this.textBoxFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAgents_KeyPress);
             // 
             // pictureBox1
             // 

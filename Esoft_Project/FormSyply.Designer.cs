@@ -33,6 +33,14 @@
             this.labelRealEstate = new System.Windows.Forms.Label();
             this.labelPrice = new System.Windows.Forms.Label();
             this.listViewSyplySet = new System.Windows.Forms.ListView();
+            this.IdРиэлтор = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.FIO_agent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.IdКлиент = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.FIO_client = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.IdОбъект_недвижимости = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Address = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Square = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Цена = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.buttonDel = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
@@ -40,15 +48,7 @@
             this.comboBoxAgents = new System.Windows.Forms.ComboBox();
             this.comboBoxClients = new System.Windows.Forms.ComboBox();
             this.comboBoxRealEstate = new System.Windows.Forms.ComboBox();
-            this.IdРиэлтор = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.IdКлиент = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.IdОбъект_недвижимости = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Цена = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.FIO_agent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.FIO_client = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Address = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Square = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,6 +116,48 @@
             this.listViewSyplySet.View = System.Windows.Forms.View.Details;
             this.listViewSyplySet.SelectedIndexChanged += new System.EventHandler(this.listViewSyplySet_SelectedIndexChanged);
             // 
+            // IdРиэлтор
+            // 
+            this.IdРиэлтор.Text = "ID Риэлтор";
+            this.IdРиэлтор.Width = 69;
+            // 
+            // FIO_agent
+            // 
+            this.FIO_agent.Text = "ФИО риэлтора";
+            this.FIO_agent.Width = 91;
+            // 
+            // IdКлиент
+            // 
+            this.IdКлиент.Text = "ID Клиент";
+            this.IdКлиент.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.IdКлиент.Width = 64;
+            // 
+            // FIO_client
+            // 
+            this.FIO_client.Text = "ФИО клиента";
+            this.FIO_client.Width = 87;
+            // 
+            // IdОбъект_недвижимости
+            // 
+            this.IdОбъект_недвижимости.Text = "ID Объект недвижимости";
+            this.IdОбъект_недвижимости.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.IdОбъект_недвижимости.Width = 146;
+            // 
+            // Address
+            // 
+            this.Address.Text = "Адрес объекта недвижимости";
+            this.Address.Width = 167;
+            // 
+            // Square
+            // 
+            this.Square.Text = "Площадь";
+            this.Square.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Цена
+            // 
+            this.Цена.Text = "Цена";
+            this.Цена.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // buttonDel
             // 
             this.buttonDel.BackColor = System.Drawing.SystemColors.Highlight;
@@ -162,6 +204,7 @@
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(237, 20);
             this.textBoxPrice.TabIndex = 9;
+            this.textBoxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormSupply_KeyPress);
             // 
             // comboBoxAgents
             // 
@@ -190,44 +233,6 @@
             this.comboBoxRealEstate.Size = new System.Drawing.Size(237, 21);
             this.comboBoxRealEstate.TabIndex = 12;
             // 
-            // IdРиэлтор
-            // 
-            this.IdРиэлтор.Text = "ID Риэлтор";
-            this.IdРиэлтор.Width = 69;
-            // 
-            // IdКлиент
-            // 
-            this.IdКлиент.Text = "ID Клиент";
-            this.IdКлиент.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.IdКлиент.Width = 64;
-            // 
-            // IdОбъект_недвижимости
-            // 
-            this.IdОбъект_недвижимости.Text = "ID Объект недвижимости";
-            this.IdОбъект_недвижимости.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.IdОбъект_недвижимости.Width = 146;
-            // 
-            // Цена
-            // 
-            this.Цена.DisplayIndex = 7;
-            this.Цена.Text = "Цена";
-            this.Цена.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // FIO_agent
-            // 
-            this.FIO_agent.Text = "ФИО риэлтора";
-            this.FIO_agent.Width = 91;
-            // 
-            // FIO_client
-            // 
-            this.FIO_client.Text = "ФИО клиента";
-            this.FIO_client.Width = 87;
-            // 
-            // Address
-            // 
-            this.Address.Text = "Адрес объекта недвижимости";
-            this.Address.Width = 167;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Esoft_Project.Properties.Resources.logo;
@@ -237,11 +242,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
-            // 
-            // Square
-            // 
-            this.Square.Text = "Площадь";
-            this.Square.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FormSyply
             // 

@@ -170,13 +170,9 @@ namespace Esoft_Project
                 MessageBox.Show("Невозможно удалить, эта запись используется!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void textBoxDealShare_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBoxAgents_KeyPress(object sender, KeyPressEventArgs e)
         {
-            char number = e.KeyChar;
-            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44) //цифры, клавиша BackSpace и запятая а ASCII
-            {
-                e.Handled = true;
-            }
+           
         }
     }
 }

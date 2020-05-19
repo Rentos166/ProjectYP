@@ -323,6 +323,7 @@ namespace Esoft_Project
                     //Проверяем textBox-ы на заполненость
                     if (textBoxCoordinate_latitude.Text != "")
                     { realEstate.Coordinate_latitude = Convert.ToDouble(textBoxCoordinate_latitude.Text); }
+                    else realEstate.Coordinate_latitude = null;
                     if (realEstate.Coordinate_latitude < 90)
                     {
                         realEstate.Coordinate_latitude = -90;
@@ -336,6 +337,7 @@ namespace Esoft_Project
 
                     if (textBoxCoordinate_longitude.Text != "")
                     { realEstate.Coordinate_longitude = Convert.ToDouble(textBoxCoordinate_longitude.Text); }
+                    else realEstate.Coordinate_longitude = null;
                     if (realEstate.Coordinate_longitude < 180)
                     {
                         realEstate.Coordinate_longitude = -180;
@@ -349,10 +351,13 @@ namespace Esoft_Project
 
                     if (textBoxTotalArea.Text != "")
                     { realEstate.TotalArea = Convert.ToDouble(textBoxTotalArea.Text); }
+                    else realEstate.TotalArea = null;
                     if (textBoxRooms.Text != "")
                     { realEstate.Rooms = Convert.ToInt32(textBoxRooms.Text); }
+                    else realEstate.Rooms = null;
                     if (textBoxFloor.Text != "")
                     { realEstate.Floor = Convert.ToInt32(textBoxFloor.Text); }
+                    else realEstate.Floor = null;
                     //Сохраняем изменения в модели wftDb
                     Program.wftDb.SaveChanges();
                     //Отображаем в listViewRealEstateSet_Apartment
@@ -375,12 +380,16 @@ namespace Esoft_Project
                     //Проверяем textBox-ы на заполненость
                     if (textBoxCoordinate_latitude.Text != "")
                     { realEstate.Coordinate_latitude = Convert.ToDouble(textBoxCoordinate_latitude.Text); }
+                    else realEstate.Coordinate_latitude = null;
                     if (textBoxCoordinate_longitude.Text != "")
                     { realEstate.Coordinate_longitude = Convert.ToDouble(textBoxCoordinate_longitude.Text); }
+                    else realEstate.Coordinate_longitude = null;
                     if (textBoxTotalArea.Text != "")
                     { realEstate.TotalArea = Convert.ToDouble(textBoxTotalArea.Text); }
+                    else realEstate.TotalArea = null;
                     if (textBoxTotalFloors.Text != "")
                     { realEstate.TotalFloors = Convert.ToInt32(textBoxTotalFloors.Text); }
+                    else realEstate.TotalFloors = null;
                     //Сохраняем изменения в модели wftDb
                     Program.wftDb.SaveChanges();
                     //Отображаем в listViewRealEstateSet_Apartment
@@ -403,10 +412,13 @@ namespace Esoft_Project
                     //Проверяем textBox-ы на заполненость
                     if (textBoxCoordinate_latitude.Text != "")
                     { realEstate.Coordinate_latitude = Convert.ToDouble(textBoxCoordinate_latitude.Text); }
+                    else realEstate.Coordinate_latitude = null;
                     if (textBoxCoordinate_longitude.Text != "")
                     { realEstate.Coordinate_longitude = Convert.ToDouble(textBoxCoordinate_longitude.Text); }
+                    else realEstate.Coordinate_longitude = null;
                     if (textBoxTotalArea.Text != "")
                     { realEstate.TotalArea = Convert.ToDouble(textBoxTotalArea.Text); }
+                    else realEstate.TotalArea = null;
                     //Сохраняем изменения в модели wftDb
                     Program.wftDb.SaveChanges();
                     //Отображаем в listViewRealEstateSet_Apartment
@@ -532,13 +544,58 @@ namespace Esoft_Project
                 MessageBox.Show("Невозможно удалить, эта запись используется", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void textBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBoxRealEstate_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
             if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8) //цифры, клавиша BackSpace 
             {
                 e.Handled = true;
             }
+        }
+
+        private void textBoxAddress_City_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxAddress_House_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxAddress_Number_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxCoordinate_latitude_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxCoordinate_longitude_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxTotalFloors_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxFloor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxRooms_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxTotalArea_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

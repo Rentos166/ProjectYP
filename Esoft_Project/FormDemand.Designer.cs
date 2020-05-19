@@ -186,6 +186,7 @@
             this.textBoxMinPrice.Name = "textBoxMinPrice";
             this.textBoxMinPrice.Size = new System.Drawing.Size(150, 23);
             this.textBoxMinPrice.TabIndex = 9;
+            this.textBoxMinPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormDemand_KeyPress);
             // 
             // textBoxMaxPrice
             // 
@@ -194,6 +195,7 @@
             this.textBoxMaxPrice.Name = "textBoxMaxPrice";
             this.textBoxMaxPrice.Size = new System.Drawing.Size(150, 23);
             this.textBoxMaxPrice.TabIndex = 10;
+            this.textBoxMaxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormDemand_KeyPress);
             // 
             // listViewDemandSetRoom
             // 
@@ -395,6 +397,7 @@
             this.textBoxMinSquare.Name = "textBoxMinSquare";
             this.textBoxMinSquare.Size = new System.Drawing.Size(150, 23);
             this.textBoxMinSquare.TabIndex = 21;
+            this.textBoxMinSquare.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormDemand_KeyPress);
             // 
             // textBoxMaxSquare
             // 
@@ -403,6 +406,7 @@
             this.textBoxMaxSquare.Name = "textBoxMaxSquare";
             this.textBoxMaxSquare.Size = new System.Drawing.Size(150, 23);
             this.textBoxMaxSquare.TabIndex = 22;
+            this.textBoxMaxSquare.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormDemand_KeyPress);
             // 
             // textBoxMinRooms
             // 
@@ -411,6 +415,7 @@
             this.textBoxMinRooms.Name = "textBoxMinRooms";
             this.textBoxMinRooms.Size = new System.Drawing.Size(150, 23);
             this.textBoxMinRooms.TabIndex = 23;
+            this.textBoxMinRooms.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormDemand_KeyPress);
             // 
             // textBoxMaxRooms
             // 
@@ -419,6 +424,7 @@
             this.textBoxMaxRooms.Name = "textBoxMaxRooms";
             this.textBoxMaxRooms.Size = new System.Drawing.Size(150, 23);
             this.textBoxMaxRooms.TabIndex = 24;
+            this.textBoxMaxRooms.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormDemand_KeyPress);
             // 
             // textBoxMinFloor
             // 
@@ -427,6 +433,7 @@
             this.textBoxMinFloor.Name = "textBoxMinFloor";
             this.textBoxMinFloor.Size = new System.Drawing.Size(150, 23);
             this.textBoxMinFloor.TabIndex = 25;
+            this.textBoxMinFloor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormDemand_KeyPress);
             // 
             // textBoxMaxFloor
             // 
@@ -435,6 +442,7 @@
             this.textBoxMaxFloor.Name = "textBoxMaxFloor";
             this.textBoxMaxFloor.Size = new System.Drawing.Size(150, 23);
             this.textBoxMaxFloor.TabIndex = 26;
+            this.textBoxMaxFloor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormDemand_KeyPress);
             // 
             // listViewDemandSetHouse
             // 
@@ -591,25 +599,27 @@
             // textBoxMaxFloors
             // 
             this.textBoxMaxFloors.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.textBoxMaxFloors.Location = new System.Drawing.Point(15, 387);
+            this.textBoxMaxFloors.Location = new System.Drawing.Point(203, 388);
             this.textBoxMaxFloors.Name = "textBoxMaxFloors";
             this.textBoxMaxFloors.Size = new System.Drawing.Size(150, 23);
             this.textBoxMaxFloors.TabIndex = 32;
             this.textBoxMaxFloors.TextChanged += new System.EventHandler(this.textBoxMaxFloors_TextChanged);
+            this.textBoxMaxFloors.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormDemand_KeyPress);
             // 
             // textBoxMinFloors
             // 
             this.textBoxMinFloors.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.textBoxMinFloors.Location = new System.Drawing.Point(14, 343);
+            this.textBoxMinFloors.Location = new System.Drawing.Point(203, 344);
             this.textBoxMinFloors.Name = "textBoxMinFloors";
             this.textBoxMinFloors.Size = new System.Drawing.Size(150, 23);
             this.textBoxMinFloors.TabIndex = 31;
+            this.textBoxMinFloors.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormDemand_KeyPress);
             // 
             // labelMaxFloors
             // 
             this.labelMaxFloors.AutoSize = true;
             this.labelMaxFloors.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelMaxFloors.Location = new System.Drawing.Point(11, 369);
+            this.labelMaxFloors.Location = new System.Drawing.Point(199, 370);
             this.labelMaxFloors.Name = "labelMaxFloors";
             this.labelMaxFloors.Size = new System.Drawing.Size(142, 15);
             this.labelMaxFloors.TabIndex = 30;
@@ -619,7 +629,7 @@
             // 
             this.labelMinFloors.AutoSize = true;
             this.labelMinFloors.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelMinFloors.Location = new System.Drawing.Point(11, 325);
+            this.labelMinFloors.Location = new System.Drawing.Point(200, 326);
             this.labelMinFloors.Name = "labelMinFloors";
             this.labelMinFloors.Size = new System.Drawing.Size(135, 15);
             this.labelMinFloors.TabIndex = 29;
