@@ -45,8 +45,8 @@
             this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.textBoxMiddleName = new System.Windows.Forms.TextBox();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonDel
@@ -54,7 +54,7 @@
             this.buttonDel.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonDel.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDel.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonDel.Location = new System.Drawing.Point(435, 243);
+            this.buttonDel.Location = new System.Drawing.Point(485, 243);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(75, 36);
             this.buttonDel.TabIndex = 28;
@@ -67,7 +67,7 @@
             this.buttonEdit.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonEdit.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEdit.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonEdit.Location = new System.Drawing.Point(354, 243);
+            this.buttonEdit.Location = new System.Drawing.Point(404, 243);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(75, 36);
             this.buttonEdit.TabIndex = 27;
@@ -80,7 +80,7 @@
             this.buttonAdd.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonAdd.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonAdd.Location = new System.Drawing.Point(273, 243);
+            this.buttonAdd.Location = new System.Drawing.Point(323, 243);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 36);
             this.buttonAdd.TabIndex = 26;
@@ -96,10 +96,11 @@
             this.Фамилия,
             this.Отчество,
             this.Процент});
+            this.listViewAgent.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewAgent.FullRowSelect = true;
             this.listViewAgent.GridLines = true;
             this.listViewAgent.HideSelection = false;
-            this.listViewAgent.Location = new System.Drawing.Point(114, 60);
+            this.listViewAgent.Location = new System.Drawing.Point(164, 60);
             this.listViewAgent.MultiSelect = false;
             this.listViewAgent.Name = "listViewAgent";
             this.listViewAgent.Size = new System.Drawing.Size(396, 177);
@@ -179,7 +180,7 @@
             this.textBoxDealShare.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxDealShare.Location = new System.Drawing.Point(8, 195);
             this.textBoxDealShare.Name = "textBoxDealShare";
-            this.textBoxDealShare.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDealShare.Size = new System.Drawing.Size(150, 20);
             this.textBoxDealShare.TabIndex = 18;
             this.textBoxDealShare.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAgents_KeyPress);
             // 
@@ -188,7 +189,7 @@
             this.textBoxLastName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxLastName.Location = new System.Drawing.Point(8, 151);
             this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLastName.Size = new System.Drawing.Size(150, 20);
             this.textBoxLastName.TabIndex = 17;
             this.textBoxLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAgents_KeyPress);
             // 
@@ -197,7 +198,7 @@
             this.textBoxMiddleName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxMiddleName.Location = new System.Drawing.Point(8, 106);
             this.textBoxMiddleName.Name = "textBoxMiddleName";
-            this.textBoxMiddleName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMiddleName.Size = new System.Drawing.Size(150, 20);
             this.textBoxMiddleName.TabIndex = 16;
             this.textBoxMiddleName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAgents_KeyPress);
             // 
@@ -206,26 +207,26 @@
             this.textBoxFirstName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxFirstName.Location = new System.Drawing.Point(8, 60);
             this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFirstName.Size = new System.Drawing.Size(150, 20);
             this.textBoxFirstName.TabIndex = 15;
             this.textBoxFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAgents_KeyPress);
             // 
-            // pictureBox1
+            // Logo
             // 
-            this.pictureBox1.Image = global::Esoft_Project.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(259, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(251, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 29;
-            this.pictureBox1.TabStop = false;
+            this.Logo.Image = global::Esoft_Project.Properties.Resources.logo;
+            this.Logo.Location = new System.Drawing.Point(309, 2);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(251, 55);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 29;
+            this.Logo.TabStop = false;
             // 
             // FormAgents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 284);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(569, 284);
+            this.Controls.Add(this.Logo);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonAdd);
@@ -240,9 +241,9 @@
             this.Controls.Add(this.textBoxFirstName);
             this.Name = "FormAgents";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Риэлторы";
+            this.Text = "Риелторы";
             this.Load += new System.EventHandler(this.FormAgents_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,7 +251,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Logo;
         private System.Windows.Forms.Button buttonDel;
         private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.Button buttonAdd;

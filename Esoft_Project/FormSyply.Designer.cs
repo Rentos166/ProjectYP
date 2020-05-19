@@ -48,8 +48,8 @@
             this.comboBoxAgents = new System.Windows.Forms.ComboBox();
             this.comboBoxClients = new System.Windows.Forms.ComboBox();
             this.comboBoxRealEstate = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // labelAgent
@@ -60,7 +60,7 @@
             this.labelAgent.Name = "labelAgent";
             this.labelAgent.Size = new System.Drawing.Size(56, 15);
             this.labelAgent.TabIndex = 1;
-            this.labelAgent.Text = "Риэлтор";
+            this.labelAgent.Text = "Риелтор";
             // 
             // labelClient
             // 
@@ -104,6 +104,7 @@
             this.Address,
             this.Square,
             this.Цена});
+            this.listViewSyplySet.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewSyplySet.FullRowSelect = true;
             this.listViewSyplySet.GridLines = true;
             this.listViewSyplySet.HideSelection = false;
@@ -118,12 +119,12 @@
             // 
             // IdРиэлтор
             // 
-            this.IdРиэлтор.Text = "ID Риэлтор";
+            this.IdРиэлтор.Text = "ID Риелтор";
             this.IdРиэлтор.Width = 69;
             // 
             // FIO_agent
             // 
-            this.FIO_agent.Text = "ФИО риэлтора";
+            this.FIO_agent.Text = "ФИО риелтора";
             this.FIO_agent.Width = 91;
             // 
             // IdКлиент
@@ -163,7 +164,7 @@
             this.buttonDel.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonDel.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonDel.Location = new System.Drawing.Point(493, 207);
+            this.buttonDel.Location = new System.Drawing.Point(675, 207);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(102, 32);
             this.buttonDel.TabIndex = 8;
@@ -176,7 +177,7 @@
             this.buttonEdit.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonEdit.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEdit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonEdit.Location = new System.Drawing.Point(385, 207);
+            this.buttonEdit.Location = new System.Drawing.Point(567, 207);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(102, 32);
             this.buttonEdit.TabIndex = 7;
@@ -189,7 +190,7 @@
             this.buttonAdd.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonAdd.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonAdd.Location = new System.Drawing.Point(277, 207);
+            this.buttonAdd.Location = new System.Drawing.Point(459, 207);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(102, 32);
             this.buttonAdd.TabIndex = 6;
@@ -233,15 +234,15 @@
             this.comboBoxRealEstate.Size = new System.Drawing.Size(237, 21);
             this.comboBoxRealEstate.TabIndex = 12;
             // 
-            // pictureBox1
+            // Logo
             // 
-            this.pictureBox1.Image = global::Esoft_Project.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(646, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(193, 53);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            this.Logo.Image = global::Esoft_Project.Properties.Resources.logo;
+            this.Logo.Location = new System.Drawing.Point(646, 2);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(193, 53);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 13;
+            this.Logo.TabStop = false;
             // 
             // FormSyply
             // 
@@ -249,7 +250,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1014, 242);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Logo);
             this.Controls.Add(this.comboBoxRealEstate);
             this.Controls.Add(this.comboBoxClients);
             this.Controls.Add(this.comboBoxAgents);
@@ -264,8 +265,8 @@
             this.Controls.Add(this.labelAgent);
             this.Name = "FormSyply";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "кк";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Text = "Предложения";
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,7 +292,7 @@
         private System.Windows.Forms.ColumnHeader FIO_agent;
         private System.Windows.Forms.ColumnHeader FIO_client;
         private System.Windows.Forms.ColumnHeader Address;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Logo;
         private System.Windows.Forms.ColumnHeader Square;
     }
 }

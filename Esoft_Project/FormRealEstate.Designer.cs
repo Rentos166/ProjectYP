@@ -80,8 +80,8 @@
             this.Широта1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Долгота1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Площадь1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonAdd
@@ -202,7 +202,7 @@
             // 
             this.labelTotalArea.AutoSize = true;
             this.labelTotalArea.Font = new System.Drawing.Font("Roboto Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTotalArea.Location = new System.Drawing.Point(255, 13);
+            this.labelTotalArea.Location = new System.Drawing.Point(128, 131);
             this.labelTotalArea.Name = "labelTotalArea";
             this.labelTotalArea.Size = new System.Drawing.Size(58, 14);
             this.labelTotalArea.TabIndex = 10;
@@ -222,7 +222,7 @@
             // 
             this.labelRooms.AutoSize = true;
             this.labelRooms.Font = new System.Drawing.Font("Roboto Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRooms.Location = new System.Drawing.Point(255, 52);
+            this.labelRooms.Location = new System.Drawing.Point(255, 51);
             this.labelRooms.Name = "labelRooms";
             this.labelRooms.Size = new System.Drawing.Size(118, 14);
             this.labelRooms.TabIndex = 12;
@@ -232,7 +232,7 @@
             // 
             this.labelFloor.AutoSize = true;
             this.labelFloor.Font = new System.Drawing.Font("Roboto Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelFloor.Location = new System.Drawing.Point(255, 92);
+            this.labelFloor.Location = new System.Drawing.Point(255, 15);
             this.labelFloor.Name = "labelFloor";
             this.labelFloor.Size = new System.Drawing.Size(36, 14);
             this.labelFloor.TabIndex = 13;
@@ -242,7 +242,7 @@
             // 
             this.labelTotalFloors.AutoSize = true;
             this.labelTotalFloors.Font = new System.Drawing.Font("Roboto Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTotalFloors.Location = new System.Drawing.Point(128, 131);
+            this.labelTotalFloors.Location = new System.Drawing.Point(255, 12);
             this.labelTotalFloors.Name = "labelTotalFloors";
             this.labelTotalFloors.Size = new System.Drawing.Size(117, 14);
             this.labelTotalFloors.TabIndex = 14;
@@ -261,10 +261,11 @@
             this.Площадь,
             this.Количество_комнат,
             this.Этаж});
+            this.listViewRealEstateSet_Apartment.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewRealEstateSet_Apartment.FullRowSelect = true;
             this.listViewRealEstateSet_Apartment.GridLines = true;
             this.listViewRealEstateSet_Apartment.HideSelection = false;
-            this.listViewRealEstateSet_Apartment.Location = new System.Drawing.Point(4, 182);
+            this.listViewRealEstateSet_Apartment.Location = new System.Drawing.Point(4, 173);
             this.listViewRealEstateSet_Apartment.MultiSelect = false;
             this.listViewRealEstateSet_Apartment.Name = "listViewRealEstateSet_Apartment";
             this.listViewRealEstateSet_Apartment.Size = new System.Drawing.Size(660, 174);
@@ -376,7 +377,7 @@
             // textBoxTotalArea
             // 
             this.textBoxTotalArea.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.textBoxTotalArea.Location = new System.Drawing.Point(258, 29);
+            this.textBoxTotalArea.Location = new System.Drawing.Point(131, 147);
             this.textBoxTotalArea.Name = "textBoxTotalArea";
             this.textBoxTotalArea.Size = new System.Drawing.Size(121, 20);
             this.textBoxTotalArea.TabIndex = 22;
@@ -386,7 +387,7 @@
             // textBoxRooms
             // 
             this.textBoxRooms.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.textBoxRooms.Location = new System.Drawing.Point(258, 68);
+            this.textBoxRooms.Location = new System.Drawing.Point(258, 67);
             this.textBoxRooms.Name = "textBoxRooms";
             this.textBoxRooms.Size = new System.Drawing.Size(121, 20);
             this.textBoxRooms.TabIndex = 23;
@@ -396,7 +397,7 @@
             // textBoxFloor
             // 
             this.textBoxFloor.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.textBoxFloor.Location = new System.Drawing.Point(258, 108);
+            this.textBoxFloor.Location = new System.Drawing.Point(258, 29);
             this.textBoxFloor.Name = "textBoxFloor";
             this.textBoxFloor.Size = new System.Drawing.Size(121, 20);
             this.textBoxFloor.TabIndex = 24;
@@ -406,7 +407,7 @@
             // textBoxTotalFloors
             // 
             this.textBoxTotalFloors.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.textBoxTotalFloors.Location = new System.Drawing.Point(131, 147);
+            this.textBoxTotalFloors.Location = new System.Drawing.Point(258, 29);
             this.textBoxTotalFloors.Name = "textBoxTotalFloors";
             this.textBoxTotalFloors.Size = new System.Drawing.Size(121, 20);
             this.textBoxTotalFloors.TabIndex = 25;
@@ -425,10 +426,11 @@
             this.Долгота2,
             this.Площадь2,
             this.Количество_этажей1});
+            this.listViewRealEstateSet_House.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewRealEstateSet_House.FullRowSelect = true;
             this.listViewRealEstateSet_House.GridLines = true;
             this.listViewRealEstateSet_House.HideSelection = false;
-            this.listViewRealEstateSet_House.Location = new System.Drawing.Point(4, 182);
+            this.listViewRealEstateSet_House.Location = new System.Drawing.Point(4, 173);
             this.listViewRealEstateSet_House.MultiSelect = false;
             this.listViewRealEstateSet_House.Name = "listViewRealEstateSet_House";
             this.listViewRealEstateSet_House.Size = new System.Drawing.Size(665, 174);
@@ -487,10 +489,11 @@
             this.Широта1,
             this.Долгота1,
             this.Площадь1});
+            this.listViewRealEstateSet_Land.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewRealEstateSet_Land.FullRowSelect = true;
             this.listViewRealEstateSet_Land.GridLines = true;
             this.listViewRealEstateSet_Land.HideSelection = false;
-            this.listViewRealEstateSet_Land.Location = new System.Drawing.Point(4, 182);
+            this.listViewRealEstateSet_Land.Location = new System.Drawing.Point(4, 173);
             this.listViewRealEstateSet_Land.MultiSelect = false;
             this.listViewRealEstateSet_Land.Name = "listViewRealEstateSet_Land";
             this.listViewRealEstateSet_Land.Size = new System.Drawing.Size(665, 174);
@@ -540,23 +543,23 @@
             this.Площадь1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Площадь1.Width = 90;
             // 
-            // pictureBox1
+            // Logo
             // 
-            this.pictureBox1.Image = global::Esoft_Project.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(397, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 148);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
+            this.Logo.Image = global::Esoft_Project.Properties.Resources.logo;
+            this.Logo.Location = new System.Drawing.Point(397, 8);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(267, 148);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 28;
+            this.Logo.TabStop = false;
             // 
             // FormRealEstate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(675, 400);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(673, 398);
+            this.Controls.Add(this.Logo);
             this.Controls.Add(this.listViewRealEstateSet_Land);
             this.Controls.Add(this.listViewRealEstateSet_House);
             this.Controls.Add(this.textBoxTotalFloors);
@@ -589,7 +592,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Объекты недвижимости";
             this.Load += new System.EventHandler(this.FormRealEstate_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -649,6 +652,6 @@
         private System.Windows.Forms.ColumnHeader Широта1;
         private System.Windows.Forms.ColumnHeader Долгота1;
         private System.Windows.Forms.ColumnHeader Площадь1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Logo;
     }
 }

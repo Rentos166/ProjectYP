@@ -48,8 +48,8 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxFirstName
@@ -57,31 +57,34 @@
             this.textBoxFirstName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxFirstName.Location = new System.Drawing.Point(6, 57);
             this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFirstName.Size = new System.Drawing.Size(140, 20);
             this.textBoxFirstName.TabIndex = 0;
+            this.textBoxFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxFirstName_KeyPress);
             // 
             // textBoxMiddleName
             // 
             this.textBoxMiddleName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxMiddleName.Location = new System.Drawing.Point(6, 136);
             this.textBoxMiddleName.Name = "textBoxMiddleName";
-            this.textBoxMiddleName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMiddleName.Size = new System.Drawing.Size(140, 20);
             this.textBoxMiddleName.TabIndex = 1;
+            this.textBoxMiddleName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxFirstName_KeyPress);
             // 
             // textBoxLastName
             // 
             this.textBoxLastName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxLastName.Location = new System.Drawing.Point(6, 96);
             this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLastName.Size = new System.Drawing.Size(140, 20);
             this.textBoxLastName.TabIndex = 2;
+            this.textBoxLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxFirstName_KeyPress);
             // 
             // textBoxPhone
             // 
             this.textBoxPhone.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxPhone.Location = new System.Drawing.Point(6, 175);
             this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPhone.Size = new System.Drawing.Size(140, 20);
             this.textBoxPhone.TabIndex = 3;
             // 
             // textBoxEmail
@@ -89,7 +92,7 @@
             this.textBoxEmail.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxEmail.Location = new System.Drawing.Point(6, 214);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEmail.Size = new System.Drawing.Size(140, 20);
             this.textBoxEmail.TabIndex = 4;
             // 
             // labelFirstName
@@ -153,13 +156,14 @@
             this.Отчество,
             this.Телефон,
             this.Email});
+            this.listViewClient.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewClient.FullRowSelect = true;
             this.listViewClient.GridLines = true;
             this.listViewClient.HideSelection = false;
-            this.listViewClient.Location = new System.Drawing.Point(112, 57);
+            this.listViewClient.Location = new System.Drawing.Point(152, 57);
             this.listViewClient.MultiSelect = false;
             this.listViewClient.Name = "listViewClient";
-            this.listViewClient.Size = new System.Drawing.Size(396, 177);
+            this.listViewClient.Size = new System.Drawing.Size(404, 177);
             this.listViewClient.TabIndex = 10;
             this.listViewClient.UseCompatibleStateImageBehavior = false;
             this.listViewClient.View = System.Windows.Forms.View.Details;
@@ -188,19 +192,19 @@
             // Телефон
             // 
             this.Телефон.Text = "Телефон";
-            this.Телефон.Width = 78;
+            this.Телефон.Width = 86;
             // 
             // Email
             // 
             this.Email.Text = "Email";
-            this.Email.Width = 81;
+            this.Email.Width = 78;
             // 
             // buttonAdd
             // 
             this.buttonAdd.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonAdd.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonAdd.Location = new System.Drawing.Point(279, 240);
+            this.buttonAdd.Location = new System.Drawing.Point(319, 240);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 36);
             this.buttonAdd.TabIndex = 11;
@@ -213,7 +217,7 @@
             this.buttonEdit.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonEdit.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEdit.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonEdit.Location = new System.Drawing.Point(360, 240);
+            this.buttonEdit.Location = new System.Drawing.Point(400, 240);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(75, 36);
             this.buttonEdit.TabIndex = 12;
@@ -226,7 +230,7 @@
             this.buttonDel.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonDel.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDel.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonDel.Location = new System.Drawing.Point(441, 240);
+            this.buttonDel.Location = new System.Drawing.Point(481, 240);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(75, 36);
             this.buttonDel.TabIndex = 13;
@@ -234,23 +238,23 @@
             this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
-            // pictureBox1
+            // Logo
             // 
-            this.pictureBox1.Image = global::Esoft_Project.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(257, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(251, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.Logo.Image = global::Esoft_Project.Properties.Resources.logo;
+            this.Logo.Location = new System.Drawing.Point(305, -1);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(251, 55);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 14;
+            this.Logo.TabStop = false;
             // 
             // FormClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(520, 282);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(560, 282);
+            this.Controls.Add(this.Logo);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonAdd);
@@ -269,7 +273,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Клиенты";
             this.Load += new System.EventHandler(this.FormClients_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,6 +301,6 @@
         private System.Windows.Forms.ColumnHeader Отчество;
         private System.Windows.Forms.ColumnHeader Телефон;
         private System.Windows.Forms.ColumnHeader Email;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Logo;
     }
 }
