@@ -125,6 +125,7 @@
             // FIO_agent
             // 
             this.FIO_agent.Text = "ФИО риелтора";
+            this.FIO_agent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.FIO_agent.Width = 91;
             // 
             // IdКлиент
@@ -136,6 +137,7 @@
             // FIO_client
             // 
             this.FIO_client.Text = "ФИО клиента";
+            this.FIO_client.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.FIO_client.Width = 87;
             // 
             // IdОбъект_недвижимости
@@ -147,6 +149,7 @@
             // Address
             // 
             this.Address.Text = "Адрес объекта недвижимости";
+            this.Address.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Address.Width = 167;
             // 
             // Square

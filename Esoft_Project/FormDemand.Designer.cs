@@ -559,41 +559,49 @@
             // FioAgent1
             // 
             this.FioAgent1.Text = "ФИО риелтора";
+            this.FioAgent1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.FioAgent1.Width = 143;
             // 
             // IdClient1
             // 
             this.IdClient1.Text = "ID клиента";
+            this.IdClient1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.IdClient1.Width = 111;
             // 
             // FioClient1
             // 
             this.FioClient1.Text = "ФИО клиента";
+            this.FioClient1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.FioClient1.Width = 140;
             // 
             // Type_ON1
             // 
             this.Type_ON1.Text = "Тип О.Н.";
+            this.Type_ON1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Type_ON1.Width = 128;
             // 
             // Minprice
             // 
             this.Minprice.Text = "Мин. цена";
+            this.Minprice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Minprice.Width = 119;
             // 
             // Maxprice
             // 
             this.Maxprice.Text = "Макс. цена";
+            this.Maxprice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Maxprice.Width = 111;
             // 
             // MinSquare1
             // 
             this.MinSquare1.Text = "Мин. площадь";
+            this.MinSquare1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MinSquare1.Width = 153;
             // 
             // MaxSquare1
             // 
             this.MaxSquare1.Text = "Макс. площадь";
+            this.MaxSquare1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MaxSquare1.Width = 142;
             // 
             // textBoxMaxFloors

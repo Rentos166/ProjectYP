@@ -92,6 +92,8 @@ namespace Esoft_Project
                 textBoxMiddleName.Text = agentSet.MiddleName;
                 textBoxLastName.Text = agentSet.LastName;
                 textBoxDealShare.Text = agentSet.DealShare.ToString();
+                ShowSupplySet(agentSet);
+                ShowDemandSet(agentSet);
             }
             else
             {
@@ -173,6 +175,76 @@ namespace Esoft_Project
         private void textBoxAgents_KeyPress(object sender, KeyPressEventArgs e)
         {
            
+        }
+        void ShowSupplySet(AgentSet agentSet)
+        {
+            //очищаем listView
+            listViewSupplySet.Items.Clear();
+            //проходим по коллекции
+            foreach (SyppySet syppy in Program.wftDb.SyppySet)
+            {
+                if (agentSet.Id == syppy.IdClient)
+                {
+                    //Создаем новый элемент
+                    ListViewItem item = new ListViewItem(new string[]
+                    {
+                         //Риелтор
+                         syppy.AgentSet.LastName +" "+syppy.AgentSet.FirstName.Remove(1) +". "+ syppy.AgentSet.MiddleName.Remove(1)+" .",
+                         //Клиент
+                         syppy.ClientsSet.LastName +" "+syppy.ClientsSet.FirstName.Remove(1) +". "+ syppy.ClientsSet.MiddleName.Remove(1)+" .",
+                         //Адрес
+                         "г. " + syppy.RealEstateSet.Address_City+", " + "ул. " + syppy.RealEstateSet.Address_Street+", "+
+                         "д. " + syppy.RealEstateSet.Address_House+", " + "кв. "+syppy.RealEstateSet.Address_Number, syppy.RealEstateSet.TotalArea.ToString(),
+                         //Цена
+                         syppy.Price.ToString()
+                    });
+                    //указываем по какому тегу выбраны элементы
+                    item.Tag = syppy;
+                    //добавляем элементы в listView
+                    listViewSupplySet.Items.Add(item);
+                }
+            }
+        }
+        void ShowDemandSet(AgentSet agentSet)
+        {
+            //очищаем listView
+            listViewDemandSet.Items.Clear();
+            //проходим по коллекции
+            foreach (DemandSet demand in Program.wftDb.DemandSet)
+            {
+                string typeON;
+                if (demand.Type == 0)
+                {
+                    typeON = "Квартира";
+                }
+                else if (demand.Type == 1)
+                {
+                    typeON = "Дом";
+                }
+                else 
+                {
+                    typeON = "Земля";
+                }
+                if (agentSet.Id == demand.IdClient)
+                {
+                    //Создаем новый элемент
+                    ListViewItem item = new ListViewItem(new string[]
+                    {
+                         //Риелтор
+                         demand.AgentSet.LastName +" "+demand.AgentSet.FirstName.Remove(1) +". "+ demand.AgentSet.MiddleName.Remove(1)+" .",
+                         //Клиент
+                         demand.ClientsSet.LastName +" "+demand.ClientsSet.FirstName.Remove(1) +". "+ demand.ClientsSet.MiddleName.Remove(1)+" .",
+                         //тип о.н.
+                         typeON,
+                         //Площадь и цена
+                         demand.MinArea.ToString(), demand.MaxArea.ToString(), demand.MinPrice.ToString(), demand.MaxPrice.ToString(),
+                    });
+                    //указываем по какому тегу выбраны элементы
+                    item.Tag = demand;
+                    //добавляем элементы в listView
+                    listViewDemandSet.Items.Add(item);
+                }
+            }
         }
     }
 }

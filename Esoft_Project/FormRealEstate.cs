@@ -546,11 +546,7 @@ namespace Esoft_Project
         }
         private void textBoxRealEstate_KeyPress(object sender, KeyPressEventArgs e)
         {
-            char number = e.KeyChar;
-            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8) //цифры, клавиша BackSpace 
-            {
-                e.Handled = true;
-            }
+
         }
 
         private void textBoxAddress_City_TextChanged(object sender, EventArgs e)

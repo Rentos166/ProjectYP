@@ -129,7 +129,7 @@
             this.comboBoxType.FormattingEnabled = true;
             this.comboBoxType.Items.AddRange(new object[] {
             "Квартира",
-            "Дома",
+            "Дом",
             "Земля"});
             this.comboBoxType.Location = new System.Drawing.Point(131, 108);
             this.comboBoxType.Name = "comboBoxType";
@@ -511,6 +511,7 @@
             // Улица1
             // 
             this.Улица1.Text = "Улица";
+            this.Улица1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Улица1.Width = 74;
             // 
             // Номер_дома1
